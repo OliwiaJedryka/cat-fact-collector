@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Fact Collector</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<main class="app">
+    <section class="cat-container">
+        <div class="cat" aria-label="Pixel art cat">
+            <div class="cat-ear cat-ear-left"></div>
+            <div class="cat-ear cat-ear-right"></div>
+            <div class="cat-face">
+                <span class="cat-eye cat-eye-left"></span>
+                <span class="cat-eye cat-eye-right"></span>
+                <span class="cat-nose"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <h1>CAT FACT COLLECTOR</h1>
+
+        <button id="factButton">
+            DOWNLOAD RANDOM CAT FACT
+        </button>
+
+        <p id="status" class="status">...</p>
+
+        <div id="factContainer" class="fact-container hidden">
+            <p id="fact"></p>
+            <span id="length"></span>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
