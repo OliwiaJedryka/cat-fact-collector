@@ -1,5 +1,3 @@
-using System.Net.Http.Json;
-
 public class CatFactClient
 {
     private readonly HttpClient _httpClient;
@@ -13,8 +11,9 @@ public class CatFactClient
     {
         var response = await _httpClient.GetAsync("https://catfact.ninja/fact");
         
-        var catFact = await response.Content.ReadFromJsonAsync<CatFactResponse>();
+        response.EnsureSuccessStatusCode();
 
-        return catFact;
+        return await response.Content.ReadFromJsonAsync<CatFactResponse>()
+           ?? throw new InvalidOperationException("Response body was empty.");
     }
 }
