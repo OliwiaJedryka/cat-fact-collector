@@ -1,5 +1,5 @@
 public class CatFactResponse
 {
-    public string Fact { get; set; }
+    public required string Fact { get; set; }
     public int Length { get; set; }
 }
