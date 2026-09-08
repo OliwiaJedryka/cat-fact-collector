@@ -10,7 +10,7 @@ public class CatFactService
     {
         var catFact = await _catFactClient.GetCatFact();
 
-        await File.AppendAllTextAsync("facts.txt", catFact.Fact + "\n");
+        await File.AppendAllTextAsync("facts.txt", $"{catFact.Fact} | length: {catFact.Length}\n");
 
         return catFact;
     }
