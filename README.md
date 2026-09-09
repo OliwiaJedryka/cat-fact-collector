@@ -15,20 +15,7 @@ Technologies
 - CSS
 - JavaScript
 - Cat Fact API
-
-Project structure
-cat-fact-collector/
-├── Client/
-├── Controller/
-├── Models/
-├── Service/
-├── wwwroot/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-├── Program.cs
-└── .gitignore
-
+- 
 How to run
 1) Clone the repository.
 2) Open the project folder in a terminal.
